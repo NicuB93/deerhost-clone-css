@@ -1,0 +1,222 @@
+/* :root {
+  --active-color: rgba(63, 54, 187, 0.815);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.plantabs div span {
+  font-weight: 200;
+  color: rgba(63, 54, 187, 0.815);
+  margin: 0;
+}
+
+.plantabs div span::before {
+  margin: 0;
+  font-size: 40px;
+}
+
+.plantabs div {
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
+.hostingplans {
+  padding: 5%;
+  width: 100%;
+}
+
+.hostingheader {
+  text-align: center;
+}
+
+.hostplans {
+  display: flex;
+}
+
+.plantabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  background-color: rgba(211, 211, 211, 0.226);
+  margin-top: 2rem;
+}
+
+.hosttab {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.active {
+  background-color: rgba(63, 54, 187, 0.815);
+  color: white;
+}
+
+.plantable {
+  margin-top: 1rem;
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.tbody {
+  display: table;
+  width: 100%;
+  min-width: max-content;
+}
+
+.theadrow,
+.tbodyrow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+/* rgba(211, 211, 211, 0.411) */
+.tbodyhead {
+  border-left: 1px solid rgba(194, 194, 194, 0.466);
+  border-right: 1px solid rgba(194, 194, 194, 0.466);
+  border-bottom: 1px solid rgba(194, 194, 194, 0.466);
+  font-weight: 600;
+}
+
+.theadrow .th,
+.th-price {
+  border-right: 1px solid rgba(194, 194, 194, 0.466);
+  border-bottom: 1px solid rgba(194, 194, 194, 0.466);
+  border-top: 1px solid rgba(194, 194, 194, 0.466);
+}
+
+.theadrow .th:first-child {
+  border-left: 1px solid rgba(194, 194, 194, 0.466);
+}
+
+.tbodyheaddata {
+  border-bottom: 1px solid rgba(194, 194, 194, 0.466);
+  border-right: 1px solid rgba(194, 194, 194, 0.466);
+  text-align: center;
+}
+
+.theadrow .th {
+  padding: 20% 10%;
+  text-align: center;
+}
+
+.tbodyhead,
+.tbodyheaddata,
+.th {
+  padding: 1rem;
+  /* margin: 0 1rem; */
+}
+
+.th-price {
+  padding: 2rem;
+  text-align: center;
+}
+
+.theadrow .th:first-child {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sharepar {
+  color: rgba(78, 75, 245, 0.712);
+}
+
+.choose-plan {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.plan-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.plan-price {
+  color: rgba(63, 54, 187, 0.815);
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.price-per-month {
+  font-weight: 600;
+}
+
+.buy-plan {
+  border: 0;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 10000px;
+}
+
+.questions--form {
+  padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.q {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.a {
+  font-size: 0.8rem;
+  cursor: pointer;
+  height: auto;
+  max-height: 150px;
+  overflow: hidden;
+  transition: max-height 0.5s linear;
+}
+
+.a.hidden {
+  max-height: 0;
+}
+
+.plus-minus {
+  width: 13px;
+  height: 13px;
+  margin-right: 0.5rem;
+  text-align: center;
+  border: 0;
+  background-color: rgb(77, 75, 245);
+  color: white;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.plus-minus:focus {
+  outline: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > * {
+  padding: 15px;
+  margin: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.342);
+  font-size: 12px;
+}
+
+.send--question {
+  background-color: rgb(77, 75, 245);
+  border: 0;
+  border-radius: 10000px;
+  color: white;
+  font-weight: 600;
+  width: 160px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
